@@ -91,4 +91,13 @@ function animate(time: number) {
     renderer.render(scene, camera);
 }
 
-init();
+document.addEventListener("readystatechange", function() {
+    if (this.readyState === "complete") {
+        const el = this.getElementById("main");
+        if (!el) {
+            throw "main element not found";
+        }
+        el.classList.add("show");
+        init();
+    }
+});
