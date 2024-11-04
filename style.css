@@ -26,10 +26,6 @@ li {
     padding-bottom: 0.5em;
 }
 
-.show {
-    opacity: 1 !important;
-}
-
 .monospace {
   font-family: "Inconsolata", monospace;
 }
@@ -56,9 +52,19 @@ li {
     z-index: -1;
 }
 
+@keyframes show {
+  from { opacity: 0}
+  to { opacity: 1}
+}
+
+.show {
+    animation-name: show;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 .main {
     opacity: 0;
-    transition: opacity 0.3s;
     margin-left: auto;
     margin-right: auto;
     max-width: 1024px;
