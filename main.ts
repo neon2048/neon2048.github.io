@@ -37,10 +37,19 @@ function init() {
     renderer.setSize(utils.getDocumentWidth(), utils.getDocumentHeightFull());
 
     App.app = new App(camera, scene);
-    App.app.registerScene("profile", new ProfileScene());
-    App.app.registerScene("wave", new WaveScene());
     App.app.registerScene("neono", new NeonOScene());
-    App.app.registerScene("core", new CoreScene());
+
+    switch (window.location.pathname.toLowerCase()) {
+        case "/index.html":
+        case "/":
+            App.app.registerScene("profile", new ProfileScene());
+            App.app.registerScene("wave", new WaveScene());
+            break;
+
+        case "/next.html":
+            App.app.registerScene("core", new CoreScene());
+            App.app.registerScene("wave", new WaveScene());
+    }
 
     App.app.loadScenes();
 

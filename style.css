@@ -26,6 +26,36 @@ li {
     padding-bottom: 0.5em;
 }
 
+.nav {
+    padding-bottom: 1.5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+    color: #e7cfd7;
+    z-index: 1;
+}
+
+.navlink {
+    text-decoration: none;
+    letter-spacing: 0.3em;
+    font-size: 130%;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    user-select: none;
+    opacity: .7;
+    transition: 0.3s;
+}
+
+.navlink:hover {
+    cursor: pointer;
+    opacity: 1;
+    letter-spacing: 0.4em;
+    transform: scale(1.2);
+}
+
 .monospace {
   font-family: "Inconsolata", monospace;
 }
