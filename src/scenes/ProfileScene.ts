@@ -37,7 +37,7 @@ export default class ProfileScene extends Scene {
     onTimeUpdate(delta: number) {
         if (this.card) {
             this.time += delta;
-            this.card.position.y = this.cardPosition.y + this.cardPosition.y * Math.sin(this.time * 0.001) * 0.06;
+            this.card.position.y = this.cardPosition.y + this.card.height * Math.sin(this.time * 0.001) * 0.008;
             this.card.rotation.y = Math.sin(this.time * 0.0005) * 0.7;
             this.card.updateTime(delta);
         }
