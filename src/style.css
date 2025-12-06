@@ -237,7 +237,7 @@ body {
 @media (max-width: 800px) {
 
     .layout {
-        grid-template-rows: 1fr 1fr 1fr auto;
+        grid-template-rows: auto 1fr 1fr auto;
         grid-template-columns: auto;
         grid-template-areas:
         'logo'
@@ -246,6 +246,10 @@ body {
         'footer';
         grid-row-gap: 2rem;
         row-gap: 2rem;
+    }
+
+    .content-info {
+        padding-top: 0rem;
     }
 
     .content-logo {
