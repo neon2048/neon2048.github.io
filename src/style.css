@@ -1,0 +1,263 @@
+@import url("./normalize.css");
+@import url("./fonts.css");
+
+:root {
+    --fg: #e8d2ff;
+    --bg: #0d0d10;
+
+    --orange: #fb9f25;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--fg);
+    margin: 0; 
+    padding: 0;
+
+    font-family: "Fira Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    height: 100vh;
+}
+
+.layout {
+    margin: auto;
+    display: grid;
+    justify-content: start;
+    grid-column-gap: 15px;
+    column-gap: 15px;
+    grid-row-gap: 0px;
+    row-gap: 0px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+    'logo contact info'
+    'footer footer info'
+}
+
+.content-logo {
+    grid-area: logo;
+    justify-self: end;
+    align-self: end;
+}
+
+.content-contact {
+    grid-area: contact;
+    background-image: url('/monk.png');
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.session-contact {
+    background-color: var(--bg);
+    border: 2px solid var(--fg);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.session-contact-id {
+    word-wrap: break-word;
+    max-width: 20em;
+}
+
+.socials-contact {
+    background-color: var(--bg);
+    border: 2px solid var(--fg);
+    margin: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content-top-decoration {
+    display: flex;
+}
+
+.logo-sic-semper {
+    display: flex;
+    padding-left: 0.5rem;
+}
+
+.logo-sic-semper-text {
+    background-color: var(--fg);
+    color: var(--bg);
+    padding: 0.5rem;
+}
+
+.logo-sic-semper-top {
+    font-size: 2rem;
+}
+
+.logo-sic-semper-bottom {
+    font-size: 2.5rem;
+}
+
+.logo-sic-semper-decoration {
+    width: 4rem;
+    --n: 9;
+    --stripe-width: calc(100% / var(--n));
+    background: repeating-linear-gradient(
+    to right,
+    var(--fg) 0,
+    var(--fg) var(--stripe-width),
+    var(--bg) var(--stripe-width),
+    var(--bg) calc(var(--stripe-width) * 2)
+    );
+}
+
+.logo-encrypt {
+    color: var(--orange);
+}
+
+.logo-encrypt-top {
+    font-size: 5rem;
+}
+.logo-encrypt-bottom {
+    font-size: 3.5rem;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.session-contact h1 {
+    color: var(--bg);
+    background-color: var(--fg);
+    padding: 0.5rem;
+    margin: 0;
+}
+
+.session-contact-body {
+    margin: 1.5rem;
+}
+
+.session-contact-body h2{
+    margin: 0rem;
+    color: var(--orange);
+}
+
+.session-contact-body div {
+    white-space: pre-line;
+    margin-top: 1rem;
+}
+
+.session-contact-body a {
+    color: var(--fg)
+}
+
+.contact-box {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.content-contact-bg {
+    grid-area: contact;
+    z-index: -1;
+}
+
+.content-footer {
+    grid-area: footer;
+    display: flex;
+    align-self: end;
+    padding-top: 1rem;
+}
+
+.content-info {
+    grid-area: info
+}
+
+
+.footer-text {
+    font-size: 5rem;
+}
+
+.stripes {
+    width: 100%;
+    font-size: 5rem;
+    color: transparent;
+    --n: 5;
+    --stripe-height: calc(100% / var(--n));
+    background: repeating-linear-gradient(
+    to bottom,
+    var(--fg) 0,
+    var(--fg) var(--stripe-height),
+    var(--bg) var(--stripe-height),
+    var(--bg) calc(var(--stripe-height) * 2)
+    );
+    margin-right: 1rem;
+}
+
+.stripes-content {
+    margin-top: 1rem;
+    height: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pgp {
+    white-space: pre-line;
+    border: 2px solid var(--fg);
+    padding: 1rem;
+}
+
+
+
+@media (max-width: 1680px) {
+
+    body {
+    }
+    .layout {
+        margin: auto;
+        display: grid;
+        justify-content: start;
+        grid-column-gap: 15px;
+        column-gap: 15px;
+        grid-row-gap: 0px;
+        row-gap: 0px;
+
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr auto auto;
+        grid-template-areas:
+        'logo contact'
+        'info info'
+        'footer footer';
+    }
+
+    .content-info {
+        padding-top: 2rem;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .layout {
+        grid-template-rows: 1fr 1fr 1fr auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        'logo'
+        'contact'
+        'info'
+        'footer';
+        grid-row-gap: 2rem;
+        row-gap: 2rem;
+    }
+
+    .content-logo {
+        grid-area: logo;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .content-footer {
+        grid-area: footer;
+        align-self: center;
+        padding-bottom: 2rem;
+    }
+
+}

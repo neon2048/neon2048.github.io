@@ -1,188 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
-<head>
-    <meta charset="utf-8">
-    <title>Neon.</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
-        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Inconsolata:wght@200..900&family=Rosarivo:ital@0;1&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
-</head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Neon.</title>
+    </head>
+    <body>
 
-<body>
-    <script type="module" src="/main.ts"></script>
+        <div id="main" class="layout">
 
-    <div class="container-row">
-        <div class="container-layer">
-            <canvas class="bgcanvas" id="maincanvas"></canvas>
-        </div>
-        <div class="container-layer">
-            <div class="main" id="main">
-                <div class="header">
-                    <div class="hcontainer">
-                        <h1>NE</h1>
-                        <div id="neono-spacer" class="spacer-neono"></div>
-                        <h1>N.</h1>
-                    </div>
-                    <div id="mainnav" class="nav">
-                        <div class="pure-g">
-                            <a href="./index.html" class="navlink pure-u-1-2">about me</a>
-                            <a href="./next.html" class="navlink pure-u-1-2">next project</a>
+            <div class="content-logo">
+                <object class="card" type="image/svg+xml" data="/neon.svg"></object>
+            </div>
+
+            <div class="content-contact">
+
+                <div class="contact-box">
+                    <div class="session-contact">
+                        <h1>[Contact]</h1>
+                        <div class="session-contact-body">
+                            <h2>Session Account ID</h2>
+                            <div class="session-contact-id">054fb495f878cb2b79829b4ba81f37cfba6430941113a14d3b8f522a0cffa7f24a</div>
+                            <div> <a href="https://getsession.org/">https://getsession.org</a> </div>
                         </div>
+                    </div>
+
+                    <div class="socials-contact">
+                        <div>[ GitHub ............. neon2048  ]</div>
+                        <div>[ Discord ............ neon0x2e  ]</div>
+                        <div>[ Twitter ............ @neon0x2e ]</div>
+                        <div>[ YouTube ............ @Neon0x2E ]</div>
                     </div>
                 </div>
 
-                <div class="content pure-g">
-                    <div class="pure-u-1-1 pure-u-md-1-3">
-                        <div class="el">
-                            <div class="subheading">
-                                <h1>Hi, I'm Neon.</h1>
+            </div>
+
+            <div class="content-footer">
+                <div class="stripes"></div>
+                <object class="card" type="image/svg+xml" data="/esc.svg"></object>
+            </div>
+
+            <div class="content-info">
+
+                <div class="content-top-decoration">
+                    <object class="logo" type="image/svg+xml" data="/logo.svg"></object>
+
+                    <div>
+                        <div class="logo-sic-semper">
+                            <div class="logo-sic-semper-text">
+                                <div class="logo-sic-semper-top">sic semper</div>
+                                <div class="logo-sic-semper-bottom">tyrannis</div>
                             </div>
-                            <p>I love to take ideas apart, to understand how they work and to put them back together in
-                                my own
-                                way. </p>
-                            <p>My main interest is software and everything adjacent, from userland to kernel, down to
-                                the firmware and back. Coding, reverse engineering, exploiting - the full stack.</p>
-                            <div class="subheading">
-                                <h2>Likes</h2>
+                            <div class="logo-sic-semper-decoration">
                             </div>
+                        </div>
 
-                            <a class="tidbit" href="https://myanimelist.net/anime/34798/Yuru_Camp%E2%96%B3"
-                                target="_blank">
-                                <div class="tidbit-icon">△</div>
-                                <div>
-                                    <div class="tidbit-value">Yuru Camp</div>
-                                    <div class="tidbit-key">anime</div>
-                                </div>
-                            </a>
-
-                            <a class="tidbit" href="https://mitty-terminal.uwu.ai/#home" target="_blank">
-                                <div class="tidbit-icon">🧿</div>
-                                <div>
-                                    <div class="tidbit-value">Mitty</div>
-                                    <div class="tidbit-key">oshi</div>
-                                </div>
-                            </a>
-
-                            <a class="tidbit" href="https://www.youtube.com/watch?v=gzuK4AXAbcc&t=0s" target="_blank">
-                                <div class="tidbit-icon">░</div>
-                                <div>
-                                    <div class="tidbit-value">MBR - Hardwarez</div>
-                                    <div class="tidbit-key">music</div>
-                                </div>
-                            </a>
+                        <div class="logo-encrypt">
+                            <div class="logo-encrypt-top">ENCRYPT</div>
+                            <div class="logo-encrypt-bottom">EVERYTHING</div>
                         </div>
                     </div>
+                </div>
+                <div class="stripes stripes-content"></div>
+                <div class="pgp">pub   brainpoolP512r1 2025-12-06 [SC]
+                          EFCB69534F2B541BE8B23A6D3A37CF6C9EDBFA3E
+                    uid                      Neon.
+                    sub   brainpoolP512r1 2025-12-06 [E]
 
-                    <div class="pure-u-1-1 pure-u-md-1-3">
-                        <div class="spacer-9-16" id="profile-spacer"></div>
-                    </div>
-                    <div class="pure-u-1-1 pure-u-md-1-3">
-                        <div class="el">
-                            <div class="subheading">
-                                <h2>Contact</h2>
-                            </div>
-                            <p>My DMs are always open, feel free to message me.</p>
-                            <div>Twitter: @neon0x2e</div>
-                            <div>Discord: neon0x2e</div>
-                            <p class="monospace-fade">
-                                4f 6e 65 20 6f 66 20 6d 79 20 66 61 76 6f 72 69 74 65 20 62 61 6e 64 73 2c 20 49 20 6c
-                                6f 76 65 20 74 68 65 69 72 20 75 6e 69 71 75 65 20 73 74 79 6c 65 3a 20 68 74 74 70 73
-                                3a 2f 2f 77 77 77 2e 79 6f 75 74 75 62 65 2e 63 6f 6d 2f 77 61 74 63 68 3f 76 3d 4d 6c
-                                6e 47 59 63 4d 70 78 67 55
-                            </p>
-                        </div>
-                    </div>
+                    -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-                    <div class="pure-u-1-1 pure-u-md-2-3">
-                        <div class="el">
-                            <h1 class="codeh1">Code</h1>
-                            <a class="cardlink" href="https://github.com/neon2048/Awatistic" target="_blank">
-                                <div class="card">
-                                    <h4>Awatistic</h4>
-                                    <h5>a fast AWA5.0 interpreter</h5>
-                                    <div>
-                                        AWA5.0 is an esoteric programming language made up by the community of Jelly
-                                        Hoshiumi. The reference implementation is in JavaScript so I implementd my own
-                                        interpreter in Rust to achieve maximum meme potential. Also works as assembler
-                                        and disassembler with some debugging capabilities.
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="cardlink" href="https://github.com/neon2048/neon2048.github.io" target="_blank">
-                                <div class="card">
-                                    <h4>neon2048.github.io</h4>
-                                    <h5>the page you are looking at</h5>
-                                    <div>
-                                        Inspired by Mitty's control panel website, I wanted to put my own little island
-                                        into the vast ocean of the internet. The effects are based on three.js with
-                                        custom GPU shaders. All code is available open source on my Github, feel
-                                        free to steal anything you like.
-                                    </div>
-                                </div>
-                            </a>
-                            <a class="cardlink" href="./next.html" target="_blank">
-                                <div class="card">
-                                    <h4>Next Project</h4>
-                                    <h5>????????</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="pure-u-1-1 pure-u-md-1-3">
-                        <div class="el">
-                            <div class="subheading">
-                                <h1>Dev Tools</h1>
-                            </div>
-                            <ul>
-                                <li>
-                                    <b>Arch Linux</b>
-                                    <div>I use Arch btw.</div>
-                                </li>
-                                <li>
-                                    <b>Hyprland</b>
-                                    <div>best tiling wm</div>
-                                </li>
-                                <li>
-                                    <b>Kitty</b>
-                                    <div>meow~</div>
-                                </li>
-                                <li>
-                                    <b>Neovim</b>
-                                    <div>the GOAT</div>
-                                </li>
-                                <li>
-                                    <b>Ghidra</b>
-                                    <div>maybe I shouldn't run NSA software...</div>
-                                </li>
-                                <li>
-                                    <b>GDB with GEF</b>
-                                    <div>GEF makes GDB almost usable</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="pure-u-1-1">
-                        <div class="spacer-6-1" id="wave-spacer"></div>
-                    </div>
-
-                    <div class="credits">
-                        Credits: Hermit card by Pamela Colman Smith (public domain)
-                    </div>
-
+                    mJMEaTSX4xMJKyQDAwIIAQENBAMETs/Sv9mhqJH0mfRSLchGs0bSpxX/8dICkCe0
+                    b/oOP1bLRIASz4QsY7J1M4+K10WyPKhvAW9tLkolKBjGKg32wRAaty7M5nk6tl5q
+                    DQ55F20XSz9bEB4Vjk5m1oc8Z1wi8gq52GeQOwOtTIsyhAmVDuhQGmmX74xEjIYL
+                    b9oJREK0BU5lb24uiNAEExMKADgWIQTvy2lTTytUG+iyOm06N89sntv6PgUCaTSX
+                    4wIbAwULCQgHAgYVCgkICwIEFgIDAQIeAQIXgAAKCRA6N89sntv6PjhQAf0YvkML
+                    VYlcVSpuKEMcL9ShNIZ0Xa7KHWJJh9D6CpzI0FhoSTOriZJ8P6RWvE+7a2TJvgaS
+                    NqAqRVP6CzB1CwMgAf40EHm87WZbcVaN9H0wNzQGUgg4rimLP698dWUmbDXgpwhy
+                    jbI0OMRtNpGTLf6imSI0PV8Tcq3B8jn+Ug8S/15HuJcEaTSX4xIJKyQDAwIIAQEN
+                    BAMECpEzBMcyXjdpwkEvktOz+UIY92E2tsQXZgiSHVmK7WgS8v8H3/cb/TQflaDv
+                    FQLBTbTPgpFdM+6nypAdFmsSeQJ5SepeS0bS2yF6FHxMzR1l1No79EsoCmLyDjBQ
+                    5VB5nEo5E/fMP9dzvMiYPSZ2sgSzF5lFDe6R3uulumWEWCYDAQoJiLgEGBMKACAW
+                    IQTvy2lTTytUG+iyOm06N89sntv6PgUCaTSX4wIbDAAKCRA6N89sntv6PspaAf91
+                    OQwW21v4i41hmtxPy00DOOY/OW90ELJGH3CWtD+WhnCSNxcjnoQluB5sN/n8IkAY
+                    1XSnUVXfP09MV1GlYHyvAf9bRbotf4RYHevuVkclg/iqivOpBxhD35rjgmN33LUr
+                    7Yufnozhqy/VisHvlX1O9DP9djXhCYEUvPreaOYdvJh1
+                    =Z8r/
+                    -----END PGP PUBLIC KEY BLOCK-----
                 </div>
             </div>
+
         </div>
-    </div>
-
-</body>
-
+        <script type="module" src="/src/main.ts"></script>
+    </body>
 </html>
