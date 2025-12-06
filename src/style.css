@@ -72,6 +72,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.socials-contact div {
+    white-space: preserve;
+}
+
 .content-top-decoration {
     display: flex;
 }
